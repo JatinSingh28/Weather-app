@@ -23,3 +23,6 @@ def index(request):
         city = ''
         data = ''
     return render(request, 'index.html', {'data': data, 'city': city})
+
+def login(request):
+    pass
