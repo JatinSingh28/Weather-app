@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-do&q79aaph%u4=4b%%s-jy(f)xo*3#+4=p^x4v1od^sgc64@=8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*', '.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -76,10 +77,10 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 }
 
 
